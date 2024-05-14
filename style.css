@@ -1,0 +1,329 @@
+/*responsivo*/
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        padding: 0 20px; 
+    }
+    header .btn-contato button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+    section.topo .flex {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+    .topo h1 {
+        font-size: 30px; 
+        line-height: 35px; 
+    }
+    .img-topo {
+        margin-top: 20px; 
+    }
+    section.skils .flex {
+        flex-direction: column; 
+    }
+    .skils .skilsbox {
+        padding: 20px; 
+        margin-top: 20px; 
+    }
+    .skils .skilsbox i {
+        font-size: 40px; 
+    }
+    section.sobre .flex {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+    .sobre .img-sobre img {
+        width: 100%; 
+        height: auto; 
+    }
+    .sobre .txt-sobre h2 {
+        font-size: 30px; 
+    }
+    .btn-work button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+    .flex-work {
+        text-align: center; 
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        padding: 0 10px; 
+    }
+    .topo h1 {
+        font-size: 25px; 
+        line-height: 30px; 
+    }
+    .skils .skilsbox i {
+        font-size: 30px; 
+    }
+    .sobre .txt-sobre h2 {
+        font-size: 25px; 
+    }
+}
+
+/* estrutura do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #11162B;
+    height: 100vh;;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #ffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: blue;
+}
+
+button:hover{
+    color: #ffff;
+    transform: scale(1.0);
+}
+/*estilo do cabeçalho */
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #ffff;
+    transform: scale(1.0);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px white;
+}
+
+.interface .titulo h1 {
+    color: white;
+}
+
+/* estilo do topo do site */
+
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+}
+
+.topo h1{
+  color: #ffff;  
+  font-size: 45px;
+  line-height: 40px;
+}
+
+.topo .txt-topo p{
+    color: #ffff;
+
+}
+
+.topo .img-topo{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+ 
+}
+
+.img-topo img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px white;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+/* estilo skils*/
+
+section.skils{
+    padding: 40px 4%;
+}
+
+section.skils .flex{
+    gap: 60px;
+}
+
+.skils .skilsbox{
+    color: #ffff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.skils .skilsbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffff;
+}
+
+.skils .skilsbox i{
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+
+/* estilo sobre*/
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .img-sobre img{
+    border-radius: 20px;
+}
+.sobre .txt-sobre{
+    color: #ffff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: blue;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+    
+}
+
+.sobre .btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: blue;
+    margin: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* area do work*/
+
+.flex{
+    display: flex;
+}
+
+.btn-work button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-work{
+    flex-direction: column;
+    text-align: center;
+}
+
+.content{
+    color: #ffff;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.content span{
+    color: blue;
+}
+
+/*footer estrutura*/
+
+footer{
+    padding: 40px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.line p{ 
+    color: #ffff;
+}
+
+hr{
+    border: 1px solid #ffff;
+}
